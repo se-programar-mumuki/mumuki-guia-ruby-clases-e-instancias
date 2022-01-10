@@ -1,0 +1,1 @@
+Para agregar zombis a la colección `caminantes` recorda que podés enviarle el mensaje `push` a la colección.

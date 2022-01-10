@@ -1,0 +1,1 @@
+¿Qué pasó acá? Tenemos dos objetos de comportamiento **idéntico**, cuya única diferencia es la _referencia_ con la que los conocemos: uno es `Bouba`, el otro es `Kiki`. ¡Pero estamos **repitiendo lógica** en el comportamiento de ambos objetos! :astonished: 

@@ -1,0 +1,20 @@
+---
+rules:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_expectations_failed:
+    - ataque_masivo! Calls:atacar!
+  then: en `ataque_masivo!` debemos utilizar el método `atacar!` para atacar a cada
+    zombi
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_expectations_failed:
+    - Sobreviviente DeclaresComputationWithArity1:ataque_masivo!
+  then: "`ataque_masivo!` debe recibir como argumento a la lista de zombis que debe
+    `atacar!` el `Sobreviviente`"
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_expectations_failed:
+    - ataque_masivo! Not:Assigns
+  then: "`ataque_masivo!` solo debe `atacar!` a cada uno de los zombis de la lista
+    que recibe como argumento, no hace falta hacer asignaciones"

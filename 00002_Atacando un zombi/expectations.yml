@@ -1,0 +1,11 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: atacar!
+  inspection: Calls:recibir_danio!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: energia
+  inspection: Uses:@energia
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: DeclaresComputationWithArity2:atacar!
